@@ -1,0 +1,331 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110%;
+    background-color: #D7D7D7;
+  /*  background: rgba(194, 194, 194, 1);
+    background: radial-gradient(ellipse at center, rgba(194, 194, 194, 1) 0%, rgba(207, 207, 207, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(150, 148, 150, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2c2c2', endColorstr='#969496', GradientType=1);
+/*
+    background-image: url("https://cdn2.scratch.mit.edu/get_image/gallery/4070192_200x130.png");
+*/
+}
+
+body {
+    margin: auto;
+    padding: 15px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 300%;
+    text-align: center;
+}
+
+body ul li {
+    list-style-type: none;
+}
+
+
+ul li p{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+nav ul {
+    display: block;
+
+    background: rgba(215,215,215,1);
+    background: -moz-linear-gradient(-45deg, rgba(215,215,215,1) 0%, rgba(194,194,194,1) 49%, rgba(123,123,123,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(215,215,215,1) 0%, rgba(194,194,194,1) 49%, rgba(123,123,123,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(215,215,215,1) 0%, rgba(194,194,194,1) 49%, rgba(123,123,123,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(215,215,215,1) 0%, rgba(194,194,194,1) 49%, rgba(123,123,123,1) 100%);
+    background: linear-gradient(135deg, rgba(215,215,215,1) 0%, rgba(194,194,194,1) 49%, rgba(123,123,123,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7', endColorstr='#7b7b7b', GradientType=1 );
+/*
+    background: rgba(210, 255, 82, 1);
+    background: -moz-linear-gradient(45deg, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 1) 57%, rgba(30, 209, 2, 1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 1) 57%, rgba(30, 209, 2, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 1) 57%, rgba(30, 209, 2, 1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 1) 57%, rgba(30, 209, 2, 1) 100%);
+    background: linear-gradient(45deg, rgba(210, 255, 82, 1) 0%, rgba(145, 232, 66, 1) 57%, rgba(30, 209, 2, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2ff52', endColorstr='#1ed102', GradientType=1);
+*/
+}
+
+nav ul li a {
+    color: black;
+    height: 200%;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all 1s;
+}
+
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+nav ul li a {
+    transition: all 2s;
+}
+
+nav ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #fff;
+    z-index: 1;
+}
+
+nav ul li a:hover:after, nav ul li a:focus:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+}
+
+@-webkit-keyframes fill {
+    0% {
+        height: 1px;
+    }
+    50% {
+        width: 100%;
+        height: 1px;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background: #333;
+    }
+}
+
+section {
+    padding-top: 10px;
+}
+
+article {
+    padding-top: 10px;
+}
+
+section h2 {
+    font-size: 150%;
+    margin-left: 1em;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 0.5s;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+section ul li, section article {
+
+    margin: 15px;
+    -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.75);
+}
+
+footer{
+    text-align: right;
+    margin-top: 1em;
+    width: 100%;
+    background-color: #D7D7D7;
+}
+
+footer div {
+    display: inline;
+    align-content: center;
+}
+
+article {
+    margin: 5px;
+}
+
+article h2 {
+    font-size: 150%;
+}
+
+input[type=text], [type=tel], [type=email] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background: rgba(145, 232, 66, 1) 57%;
+   color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus {
+    border: 2px solid lightskyblue;
+}
+
+form p {
+    padding-top: 10px;
+}
+
+select, input[type=date] {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 8px;
+}
+
+main div{
+    font-size: 110%;
+}
+
+main div h2{
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 125%;
+}
+
+.privacy{
+    font-size: 200%;
+}
+
+address a{
+    color: darkred;
+    text-decoration: underline;
+}
+
+p > img{
+    position: relative;
+    right: 35px;
+    height: auto;
+    width: auto;
+    max-width: calc(100% + 35px + 2em);
+}
+
+h3{
+    font-size: 125%;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em;
+}
+
+article p{
+    padding: 2em;
+}
+
+article img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+
+
+}
+
+@media only screen and (min-width: 600px) {
+    p > img{
+        position: initial;
+        max-width: 320px;
+        height: auto;
+    }
+
+    nav ul {
+        height: 100%;
+        width: 20%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    main{
+        margin-left: 25%;
+        margin-right: 5%;
+    }
+
+    footer{
+        padding: initial;
+        margin-left: 20%;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    section ul li {
+        padding: 10px;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+
+    section ul li img {
+        float: left;
+        margin-right: 1em;
+    }
+
+    footer{
+        width: 74%;
+    }
+
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+    }
+
+    .cards{
+        grid-area: span 1 /span 2;
+        row-gap: 2em;
+    }
+
+}
+
+@media only screen and (min-width: 960px) {
+
+    form p.formulier {
+        display: inline-block;
+        justify-content: space-evenly;
+        width: 48%;
+        margin: 5px 5px 5px 5px;
+    }
+
+    input[type=submit]{
+        width: 97.5%;
+        margin-left: 5px;
+    }
+
+    .cards {
+        grid-area: span 1 /span 1;
+        row-gap: 2em;
+    }
+}
